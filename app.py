@@ -146,8 +146,8 @@ def build_message(name: str, months: int, tone: str):
     return "\n".join([header, ""] + [textwrap.fill(l, width=72) for l in lines])
 
 
-@app.route('/', methods=['GET', 'POST'])
-def index():
+@app.route('/another', methods=['GET', 'POST'])
+def index2():
     message = None
     saved_path = None
     current_tone = 'romantic'
